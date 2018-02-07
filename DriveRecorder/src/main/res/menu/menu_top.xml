@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appv7="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_top_change_camera"
+          android:title="@string/msgs_main_menu_change_camera" 
+          android:icon="@drawable/switch_camera"
+          appv7:showAsAction="always|withText"/>
+    <item android:id="@+id/menu_top_refresh"
+          android:title="@string/msgs_main_menu_refresh" 
+          android:icon="@drawable/ic_48_menu_refresh"
+          appv7:showAsAction="always|withText"/>
+	<item android:id="@+id/menu_top_start_autofocus"
+          android:title="@string/msgs_main_menu_start_autofocus"
+          android:icon="@drawable/focus_successed"
+          appv7:showAsAction="always|withText"/>
+	
+	<item android:id="@+id/menu_top_start_recorder"
+          android:title="@string/msgs_main_menu_start" 
+          android:icon="@drawable/ic_48_start_recorder"
+          appv7:showAsAction="always|withText"/>
+    <item android:id="@+id/menu_top_stop_recorder"
+          android:title="@string/msgs_main_menu_stop" 
+          android:icon="@drawable/ic_48_stop_recorder"
+          appv7:showAsAction="always|withText"/>
+		
+    <item android:id="@+id/menu_top_show_log"
+          android:title="@string/msgs_main_menu_show_log" 
+          android:icon="@drawable/ic_32_bw_browse_text"
+          appv7:showAsAction="never"/>
+	<item android:id="@+id/menu_top_settings"
+          android:title="@string/msgs_main_menu_setting"
+          android:icon="@android:drawable/ic_menu_preferences"
+          appv7:showAsAction="never"/>
+	<item android:id="@+id/menu_top_manage_log"
+          android:title="@string/msgs_log_file_list_title"
+          appv7:showAsAction="never"/>
+	<item android:id="@+id/menu_top_about_drive_recorder"
+          android:title="@string/msgs_about_menu_drive_recorder"
+          appv7:showAsAction="never"/>
+</menu>

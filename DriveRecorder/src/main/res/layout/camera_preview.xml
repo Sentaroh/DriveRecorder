@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/camera_preview_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <SurfaceView
+        android:id="@+id/camera_preview_focus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/camera_preview_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80ffffff"
+        android:textColor="#ff000000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+</FrameLayout>

@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.sentaroh.android.DriveRecorder"
+        minSdkVersion 16
+        targetSdkVersion 17
+
+        versionCode 1
+        versionName "1.15"
+
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+
+            applicationVariants.all { variant ->
+                if (variant.buildType.name.equals("release")) {
+                    variant.outputs.all {
+                        def versionName = variant.versionName
+                        def versionNumber = variant.versionCode.toString()
+//                        def date = new java.text.SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date())
+                        def mod_name = variant.getPackageApplication().projectBaseName
+                        def fileExtension= outputFileName.toString().substring(outputFileName.toString().lastIndexOf(".")+1)
+//                        def newName = "${mod_name}_${versionName}_${versionNumber}_${date}.${fileExtension}"
+                        def newName = "${mod_name}_${versionName}_${versionNumber}.${fileExtension}"
+                        outputFileName = newName
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+dependencies {
+//    implementation project(':Utilities')
+    implementation(name:'Utilities-1.0.1', ext:'aar')
+    implementation 'com.android.support:appcompat-v7:22.2.1'
+}

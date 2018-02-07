@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:title="@string/settings_main_ui_title"
+        android:fragment="com.sentaroh.android.DriveRecorder.ActivitySetting$SettingsUi"/>
+    <header android:title="@string/settings_main_video_title"
+        android:fragment="com.sentaroh.android.DriveRecorder.ActivitySetting$SettingsVideo"/>
+    <header android:title="@string/settings_main_misc_title"
+        android:fragment="com.sentaroh.android.DriveRecorder.ActivitySetting$SettingsMisc"/>
+    
+</preference-headers>

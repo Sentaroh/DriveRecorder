@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+  	<CheckBoxPreference
+		android:key="settings_device_orientation_portrait"
+		android:title="@string/settings_device_orientation_portrait_title"
+		android:summary="@string/settings_device_orientation_portrait_summary" />
+  	<CheckBoxPreference
+		android:key="settings_video_playback_keep_aspect_ratio"
+		android:title="@string/settings_video_playback_keep_aspect_ratio_title"
+		android:summary="@string/settings_video_playback_keep_aspect_ratio_summary" />
+  	<CheckBoxPreference
+		android:key="settings_video_record_start_stop_by_volume_key"
+		android:title="@string/settings_video_record_start_stop_by_volume_key_title"
+		android:summary="@string/settings_video_record_start_stop_by_volume_key_summary" />
+  			
+</PreferenceScreen>

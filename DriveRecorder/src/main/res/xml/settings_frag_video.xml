@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    	
+    <com.sentaroh.android.Utilities.Preference.DirectorySelectPreference
+		android:key="@string/settings_video_folder"
+		android:title="@string/settings_video_folder_title"
+		android:summary="@string/settings_video_folder_summary"
+		android:inputType="text"/>
+    <ListPreference
+		android:key="settings_recording_duration"
+		android:title="@string/settings_recording_duration_title"
+		android:summary="@string/settings_recording_duration_summary"
+		android:dialogTitle="@string/settings_recording_duration_dialog_title"
+		android:entries="@array/settings_recording_duration_list_entries"
+		android:entryValues="@array/settings_recording_duration_list_values"/>
+    <ListPreference
+		android:key="settings_max_video_keep_generation"
+		android:title="@string/settings_max_video_keep_generation_title"
+		android:summary="@string/settings_max_video_keep_generation_summary"
+		android:dialogTitle="@string/settings_max_video_keep_generation_dialog_title"
+		android:entries="@array/settings_max_video_keep_generation_list_entries"
+		android:entryValues="@array/settings_max_video_keep_generation_list_values"/>
+
+    <ListPreference
+		android:key="settings_video_record_quality"
+		android:title="@string/settings_video_record_quality_title"
+		android:summary="@string/settings_video_record_quality_summary"
+		android:dialogTitle="@string/settings_video_record_quality_dialog_title"
+		android:entries="@array/settings_video_record_quality_list_entries"
+		android:entryValues="@array/settings_video_record_quality_list_values"/>
+    
+    <ListPreference
+		android:key="settings_video_record_bitrate"
+		android:title="@string/settings_video_record_bitrate_title"
+		android:summary="@string/settings_video_record_bitrate_summary"
+		android:dialogTitle="@string/settings_video_record_bitrate_dialog_title"
+		android:entries="@array/settings_video_record_bitrate_list_entries"
+		android:entryValues="@array/settings_video_record_bitrate_list_values"/>
+    
+  	<CheckBoxPreference
+		android:key="settings_video_scene_mode_action_enabled"
+		android:title="@string/settings_video_scene_mode_action_enabled_title"
+		android:summary="@string/settings_video_scene_mode_action_enabled_summary" />
+
+  	<CheckBoxPreference
+		android:key="settings_video_stabilization_enabled"
+		android:title="@string/settings_video_stabilization_enabled_title"
+		android:summary="@string/settings_video_stabilization_enabled_summary" />
+  			
+    <CheckBoxPreference
+		android:key="settings_record_sound"
+		android:title="@string/settings_record_sound_title"
+		android:summary="@string/settings_record_sound_summary" />
+  	
+  	<CheckBoxPreference
+		android:key="settings_start_auto_focus_after_video_record_started"
+		android:title="@string/settings_start_auto_focus_after_video_record_started_title"
+		android:summary="@string/settings_start_auto_focus_after_video_record_started_summary" />
+  	
+    	    
+</PreferenceScreen>

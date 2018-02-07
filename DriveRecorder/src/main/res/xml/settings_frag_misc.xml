@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	  	<CheckBoxPreference
+			android:key="settings_debug_enable"
+			android:title="@string/settings_debug_enable_title"
+			android:summary="@string/settings_debug_enable_summary_ena" />
+      	<CheckBoxPreference
+			android:key="settings_exit_cleanly"
+			android:title="@string/settings_exit_cleanly_title"
+			android:summary="@string/settings_exit_cleanly_summary_ena" />
+	  		
+</PreferenceScreen>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ContentDescription,UselessParent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <CheckBox
+            android:id="@+id/file_list_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+	        android:focusable="false"
+	        android:focusableInTouchMode="false"
+            android:layout_marginRight="5dp" />
+        
+        <ImageView
+            android:id="@+id/file_list_thumnail"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/file_list_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:id="@+id/file_list_item_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/file_list_item_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="00:00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+
+</LinearLayout>

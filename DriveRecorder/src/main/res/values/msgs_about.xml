@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msgs_about_drive_recorder">DriveRecorder</string>
+    <string name="msgs_about_menu_drive_recorder">ドライブレコーダーについて</string>
+    <string name="msgs_about_dlg_func_html">DriveRecorderDesc_JA.htm</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_main_title">設定</string>
+    <string name="settings_main_ui_title">ユーザーインターフェース</string>
+    <string name="settings_main_video_title">ビデオ</string>
+    <string name="settings_main_misc_title">その他</string>
+    
+    <string name="settings_default_current_setting">現設定=</string>
+    
+	<string name="settings_recording_duration_title">録画時間</string>
+	<string name="settings_recording_duration_summary">現在の設定=</string>
+	<string name="settings_recording_duration_dialog_title">録画時間の選択</string>
+	<string name="settings_recording_duration">settings_recording_duration</string>
+	<string-array name="settings_recording_duration_list_entries">
+        <item>1分</item>
+        <item>2分</item>
+        <item>3分</item>
+        <item>5分</item>
+    </string-array>
+	<string-array name="settings_recording_duration_list_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+
+	<string name="settings_max_video_keep_generation_title">ビデオ保存世代</string>
+	<string name="settings_max_video_keep_generation_summary">現在の設定=</string>
+	<string name="settings_max_video_keep_generation_dialog_title">ビデオ保存世代の選択</string>
+	<string name="settings_max_video_keep_generation">settings_max_video_keep_generation</string>
+	<string-array name="settings_max_video_keep_generation_list_entries">
+        <item>10世代</item>
+        <item>50世代</item>
+        <item>100世代</item>
+        <item>200世代</item>
+        <item>300世代</item>
+    </string-array>
+	<string-array name="settings_max_video_keep_generation_list_values">
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+    </string-array>
+
+	<string name="settings_video_record_quality_title">ビデオ品質</string>
+	<string name="settings_video_record_quality_summary">現在の設定=</string>
+	<string name="settings_video_record_quality_dialog_title">ビデオ品質の選択</string>
+	<string name="settings_video_record_quality">settings_video_record_quality</string>
+	<string-array name="settings_video_record_quality_list_entries">
+        <item>低(1MBPS)</item>
+        <item>中(2MBPS)</item>
+        <item>高(4MBPS)</item>
+    </string-array>
+	<string-array name="settings_video_record_quality_list_values">
+        <item>LOW</item>
+        <item>MEDIUM</item>
+        <item>HIGH</item>
+    </string-array>
+		
+	<string name="settings_video_record_bitrate_title">ビットレート</string>
+	<string name="settings_video_record_bitrate_summary"></string>
+	<string name="settings_video_record_bitrate_dialog_title">ビットレート</string>
+	<string name="settings_video_record_bitrate">settings_video_record_bitrate</string>
+	<string-array name="settings_video_record_bitrate_list_entries">
+        <item>ビデオ品質に従う</item>
+        <item>1MBPS</item>
+        <item>2MBPS</item>
+        <item>3MBPS</item>
+        <item>4MBPS</item>
+        <item>5MBPS</item>
+        <item>6MBPS</item>
+        <item>7MBPS</item>
+        <item>8MBPS</item>
+        <item>9MBPS</item>
+        <item>10MBPS</item>
+        <item>11MBPS</item>
+        <item>12MBPS</item>
+    </string-array>
+	<string-array name="settings_video_record_bitrate_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+		
+	<string name="settings_video_playback_keep_aspect_ratio">settings_video_playback_keep_aspect_ratio</string>
+    <string name="settings_video_playback_keep_aspect_ratio_title">ビデオ再生の縦横比</string>
+    <string name="settings_video_playback_keep_aspect_ratio_summary">ビデオ再生の縦横比を保持する</string>
+
+	<string name="settings_video_record_start_stop_by_volume_key">settings_video_record_start_stop_by_volume_key</string>
+    <string name="settings_video_record_start_stop_by_volume_key_title">ロック時のボリュームキー</string>
+    <string name="settings_video_record_start_stop_by_volume_key_summary">ロックスクリーン表示時のボリュームキーで録画を開始・停止する</string>
+    	
+    <string name="settings_device_orientation_portrait">settings_device_orientation_portrait</string>
+    <string name="settings_device_orientation_portrait_title">縦位置で録画</string>
+    <string name="settings_device_orientation_portrait_summary">向きを縦にする（省略時の向きは横）</string>
+
+    <string name="settings_video_scene_mode_action_enabled">settings_video_scene_mode_action_enabled</string>
+    <string name="settings_video_scene_mode_action_enabled_title">シーン モード</string>
+    <string name="settings_video_scene_mode_action_enabled_summary">アクション/スポーツが利用できる場合は有効にする</string>
+    
+    <string name="settings_video_stabilization_enabled">settings_video_stabilization_enabled</string>
+    <string name="settings_video_stabilization_enabled_title">ビデオ手ぶれ補正機能</string>
+    <string name="settings_video_stabilization_enabled_summary">ビデオ手ぶれ補正機能を有効にする</string>
+    														
+    <string name="settings_record_sound">settings_record_sound</string>
+    <string name="settings_record_sound_title">音声の録音</string>
+    <string name="settings_record_sound_summary">音声を録音する</string>
+    														
+    <string name="settings_start_auto_focus_after_video_record_started">settings_start_auto_focus_after_video_record_started</string>
+    <string name="settings_start_auto_focus_after_video_record_started_title">録画開始直後のピント合わせ</string>
+    <string name="settings_start_auto_focus_after_video_record_started_summary">録画開始直後にピント合わせを行う</string>
+    														
+    <string name="settings_video_folder">settings_video_folder</string>
+    <string name="settings_video_folder_title">ビデオフォルダー</string>
+    <string name="settings_video_folder_summary">ビデオフォルダー</string>
+
+    <string name="settings_debug_enable_title">デバッグ情報</string>
+	<string name="settings_debug_enable_summary_ena">デバッグ情報をLOGCATに書き出す</string>
+	<string name="settings_debug_enable">settings_debug_enable</string>
+
+    <string name="settings_exit_cleanly_title">アプリケーション終了時の処理</string>
+	<string name="settings_exit_cleanly_summary_ena">プロセスをKill</string>
+	<string name="settings_exit_cleanly">settings_exit_cleanly</string>
+		
+</resources>
