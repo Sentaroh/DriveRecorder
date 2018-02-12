@@ -3,13 +3,13 @@ DriveRecorder
 
 How to Build
 
-- Clone from Github(https://github.com/Sentaroh/AutoPhoneUnlock.git) using Android Studio 3.0 or higher(VCS-> Checkout from Version Control-> GitHub).
+- Clone from Github(https://github.com/Sentaroh/DriveRecorder.git) using Android Studio 3.0 or higher(VCS-> Checkout from Version Control-> GitHub).
 - Build by Android Studio.
 
 License
 
 The MIT License (MIT)
-Copyright (c) 2011-2013 Sentaroh
+Copyright (c) 2011-2018 Sentaroh
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
