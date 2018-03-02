@@ -45,6 +45,6 @@ android {
 
 dependencies {
 //    implementation project(':Utilities')
-    implementation(name:'Utilities-1.0.1', ext:'aar')
+    implementation(name:'Utilities-1.0.5', ext:'aar')
     implementation 'com.android.support:appcompat-v7:22.2.1'
 }
