@@ -20,6 +20,27 @@ android {
     }
 
     buildTypes {
+        debug {
+            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+
+            applicationVariants.all { variant ->
+                if (variant.buildType.name.equals("debug")) {
+                    variant.outputs.all {
+                        def versionName = variant.versionName
+                        def versionNumber = variant.versionCode.toString()
+                        def date = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date())
+                        def mod_name = variant.getPackageApplication().projectBaseName
+                        def fileExtension= outputFileName.toString().substring(outputFileName.toString().lastIndexOf(".")+1)
+//                        def newName = "${mod_name}_${versionName}_${versionNumber}_${date}.${fileExtension}"
+                        def newName = "${mod_name}_${versionName}_${versionNumber}_debug.${fileExtension}"
+                        outputFileName = "../../../../../release/"+newName
+                    }
+                }
+            }
+
+        }
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
@@ -32,8 +53,8 @@ android {
                         def date = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date())
                         def mod_name = variant.getPackageApplication().projectBaseName
                         def fileExtension= outputFileName.toString().substring(outputFileName.toString().lastIndexOf(".")+1)
-                        def newName = "${mod_name}_${versionName}_${versionNumber}_${date}.${fileExtension}"
-//                        def newName = "${mod_name}_${versionName}_${versionNumber}.${fileExtension}"
+//                        def newName = "${mod_name}_${versionName}_${versionNumber}_${date}.${fileExtension}"
+                        def newName = "${mod_name}_${versionName}_${versionNumber}_release.${fileExtension}"
                         outputFileName = newName
                     }
                 }
