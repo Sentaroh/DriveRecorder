@@ -178,13 +178,12 @@ public class ActivityVideoPlayer extends FragmentActivity{
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.video_player);
+        mContext=this.getApplicationContext();
         mUiHandler=new Handler();
-        mGp=(GlobalParameters) this.getApplication();
+        mGp=GlobalWorkArea.getGlobalParameters(mContext);
         mGp.initSettingParms(this);
         mGp.loadSettingParms(this);
-        
-        mContext=this.getApplicationContext();
-        
+
         mLog=new LogUtil(mContext, "VideoPlayer", mGp);
         
         mLog.addDebugMsg(1, "I","onCreate entered");
@@ -269,17 +268,21 @@ public class ActivityVideoPlayer extends FragmentActivity{
 
 	public String getRealPathFromURI(Context context, Uri contentUri) {
 	  Cursor cursor = null;
-	  try { 
-	    String[] proj = { MediaStore.Images.Media.DATA };
-	    cursor = context.getContentResolver().query(contentUri,  proj, null, null, null);
-	    int column_index = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.DATA);
-	    cursor.moveToFirst();
-	    return cursor.getString(column_index);
-	  } finally {
-	    if (cursor != null) {
-	      cursor.close();
-	    }
-	  }
+	  if (contentUri.toString().startsWith("content://jp.naver.line.android.line")) {
+	      return contentUri.toString().replace("content://jp.naver.line.android.line.common.FileProvider/primary-storage/","/storage/emulated/0/");
+      } else {
+          try {
+              String[] proj = { MediaStore.Images.Media.DATA };
+              cursor = context.getContentResolver().query(contentUri,  proj, null, null, null);
+              int column_index = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.DATA);
+              cursor.moveToFirst();
+              return cursor.getString(column_index);
+          } finally {
+              if (cursor != null) {
+                  cursor.close();
+              }
+          }
+      }
 	};
 
 

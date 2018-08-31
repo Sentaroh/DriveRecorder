@@ -146,12 +146,9 @@ public class ActivityMain extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mUiHandler=new Handler();
-        mGp=(GlobalParameters) this.getApplication();
-        mGp.initSettingParms(this);
-        mGp.loadSettingParms(this);
-        
         mContext=this.getApplicationContext();
+        mUiHandler=new Handler();
+        mGp=GlobalWorkArea.getGlobalParameters(mContext);
 
         if (mGp.settingsDeviceOrientationPortrait) setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         else setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);

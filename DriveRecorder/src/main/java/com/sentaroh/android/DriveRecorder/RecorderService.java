@@ -112,13 +112,13 @@ public class RecorderService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-    	mGp=(GlobalParameters) this.getApplication();
-    	mGp.loadSettingParms(this);
+        mContext=this;
+        mGp=GlobalWorkArea.getGlobalParameters(mContext);
+        mGp.loadSettingParms(this);
     	mLog=new LogUtil(this,"Recorder",mGp);
     	mLog.addDebugMsg(1,"I", "onCreate entered");
     	mUiHandler=new Handler();
-    	mContext=this;
-    	
+
     	mGp.numberOfCamera=Camera.getNumberOfCameras();
     	
     	mGp.screenIsLocked=isKeyguardEffective(mContext);
