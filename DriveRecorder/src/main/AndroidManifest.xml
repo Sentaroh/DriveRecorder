@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sentaroh.android.DriveRecorder">
 
-    <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="17" />
+    <!--<uses-sdk android:targetSdkVersion="17" />-->
     
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.CAMERA" />
